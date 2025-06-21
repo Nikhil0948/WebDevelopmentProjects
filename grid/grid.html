@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Grid - HTML</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-boxs;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+
+        .nav{
+            display: grid;
+            background-color: lightblue;
+            grid-template-rows: 60px;
+            grid-template-columns: 50% 10% 10% 10% 10% 10% 10% ;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+        }
+        .item{
+            /* background-color: red; */
+        }
+        .Sheriyans{
+            justify-self: start;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <h1 class="Sheriyans">Sheriyans</h1>
+        <h4 class="item">About</h4>
+        <h4 class="item">Blog</h4>
+        <h4 class="item">Career</h4>
+        <h4 class="item">Course</h4>
+        <h4 class="item">Account</h4>
+    </div>
+
+</body>
+</html>
